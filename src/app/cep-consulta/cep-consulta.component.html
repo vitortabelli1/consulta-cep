@@ -1,0 +1,23 @@
+<div class="container">
+    <h1 class="title">Buscar-CEP</h1>
+  
+    <div class="input-group">
+      <input [(ngModel)]="cep" class="cep-input" placeholder="Digite seu CEP..." />
+      <button (click)="consultarCep()" class="cep-button">Buscar</button>
+    </div>
+  
+    <div *ngIf="endereco" class="result">
+      <h2 class="result-title">{{ endereco.logradouro }}</h2>
+      <p><strong>Bairro:</strong> {{ endereco.bairro }}</p>
+      <p><strong>Cidade:</strong> {{ endereco.localidade }}</p>
+      <p><strong>Estado:</strong> {{ endereco.uf }}</p>
+    </div>
+  
+    <div class="historico">
+      <h3 class="historico-title">Histórico</h3>
+      <div *ngFor="let item of historico" class="historico-item">
+        <p>{{ item.cep }} - {{ item.localidade }} {{ item.uf }}</p>
+      </div>
+    </div>
+  </div>
+  
