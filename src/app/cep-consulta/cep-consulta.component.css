@@ -1,105 +1,74 @@
 body {
-    font-family: 'Helvetica', 'Arial', sans-serif; /* Fonte padrão do Facebook */
-    background-color: #e9ebee; /* Fundo cinza claro */
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0f8ff; /* Fundo azul claro */
+    color: #000080; /* Texto azul marinho */
     margin: 0;
     padding: 20px;
 }
 
 .container {
-    max-width: 600px; /* Mantém a largura do conteúdo */
-    margin: 0 auto; /* Centraliza o conteúdo */
-    background-color: white; /* Fundo branco para o container */
-    border-radius: 8px; /* Bordas arredondadas */
-    padding: 20px; /* Espaçamento interno */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Sombra suave */
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 12px; /* Bordas arredondadas */
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: 1px solid #b0c4de; /* Borda azul claro */
 }
 
 .title {
     text-align: center;
-    font-size: 24px; /* Tamanho da fonte */
-    color: #4267b2; /* Azul do Facebook */
+    font-size: 28px; /* Tamanho da fonte maior */
+    color: #000080; /* Azul marinho */
     margin-bottom: 20px;
     font-weight: bold;
+    text-transform: uppercase; /* Texto em maiúsculas */
 }
 
 .input-group {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px; /* Menos espaçamento */
+    margin-bottom: 20px;
 }
 
 .cep-input {
-    flex: 1; /* Ocupar espaço disponível */
+    flex: 1;
     padding: 12px;
-    border: 1px solid #dddfe2; /* Cinza claro */
-    border-radius: 4px; /* Bordas arredondadas */
+    border: 1px solid #b0c4de; /* Azul claro */
+    border-radius: 8px; /* Bordas arredondadas */
     font-size: 1rem;
-    background-color: #f5f6f7; /* Fundo claro típico do Facebook */
+    background-color: #f0f8ff; /* Fundo azul claro */
+    color: #000080; /* Texto azul marinho */
     transition: border 0.3s, box-shadow 0.3s;
 }
 
 .cep-input:focus {
-    border-color: #4267b2; /* Azul do Facebook */
-    box-shadow: 0 0 8px rgba(66, 103, 178, 0.5); /* Sombra azul */
+    border-color: #0000ff; /* Azul */
+    box-shadow: 0 0 8px rgba(0, 0, 255, 0.5); /* Sombra azul */
     outline: none;
 }
 
 .cep-button {
     padding: 12px 20px;
-    background-color: #4267b2; /* Azul do Facebook */
-    color: white;
+    background-color: #0000ff; /* Azul */
+    color: #ffffff; /* Texto branco */
     border: none;
-    border-radius: 4px; /* Bordas arredondadas */
+    border-radius: 8px; /* Bordas arredondadas */
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .cep-button:hover {
-    background-color: #365899; /* Azul mais escuro ao passar o mouse */
+    background-color: #000080; /* Azul marinho */
     transform: scale(1.05);
 }
 
 .result {
-    background: white; /* Fundo branco */
+    background: #ffffff; /* Fundo branco */
     padding: 15px;
-    border: 1px solid #dddfe2; /* Borda cinza claro */
-    border-radius: 4px; /* Bordas arredondadas */
+    border: 1px solid #b0c4de; /* Borda azul claro */
+    border-radius: 8px; /* Bordas arredondadas */
     margin-top: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    text-align: center;
-    color: #1c1e21; /* Cor escura típica do texto do Facebook */
-}
-
-.result-title {
-    font-size: 1.5rem; /* Tamanho da fonte */
-    color: #4267b2; /* Azul do Facebook */
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.historico {
-    margin-top: 40px;
-}
-
-.historico-title {
-    font-size: 1.5rem;
-    color: #1c1e21; /* Cor escura */
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.historico-item {
-    background: #f5f6f7; /* Fundo cinza claro */
-    padding: 10px;
-    border: 1px solid #dddfe2; /* Borda cinza claro */
-    border-radius: 4px;
-    margin-top: 10px;
-    transition: background-color 0.3s;
-    font-weight: bold;
-    color: #1c1e21; /* Cor escura */
-}
-
-.historico-item:hover {
-    background-color: #e1e2e6; /* Escurece ao passar o mouse */
+    color: #000080; /* Texto azul marinho */
 }
